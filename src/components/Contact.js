@@ -60,6 +60,11 @@ export default class Contact extends React.Component {
 
 	/* 연락처 삭제 이벤트 함수 */
 	handelRemove(){
+
+        if(this.state.selectedKey < 0){
+            return;
+        }
+
 		this.setState({
 			contactData : update(this.state.contactData,
 				{ 
@@ -114,6 +119,8 @@ export default class Contact extends React.Component {
                 <ContactDetails 
                 	isSelected={this.state.selectedKey != -1}
 					contact={this.state.contactData[this.state.selectedKey]}
+                    onRemove={this.handelRemove}
+                    onEdit ={this.handleEdit}
             	/>
             	<ContactCreate
             		onCreate={this.handelCreate}
