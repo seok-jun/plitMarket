@@ -1,2 +1,2 @@
-#ignore polder
-/node_modules
+#ignore folder
+node_modules/
