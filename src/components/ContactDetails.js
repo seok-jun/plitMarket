@@ -46,6 +46,10 @@ export default class ContactDetails extends React.Component{
 		this.props.onEdit(this.state.name, this.state.phone);
 	}
 
+	handleTest(){
+		alert("여기");
+	}
+
 	render(){
 
 		const details = (
@@ -97,20 +101,18 @@ export default class ContactDetails extends React.Component{
 	}
 }
 
+ContactDetails.propTypes ={
+	contact : PropTypes.object,
+	onRemove : PropTypes.func,
+	onEdit : PropTypes.func
+}
+
 /* contact 정보가 넘어왔을때 빈 값일 경우 default 값 설정 */
 ContactDetails.defaultProps = {
 	contact:{
 		name : '',
 		phone : ''
 	},
-
 	onRemove : () => {console.log('onRemove not defined')},
 	onEdit : () => {console.log('onEdit not defined')}
-}
-
-ContactDetails.propTypes ={
-	contact : PropTypes.object,
-	onRemove : PropTypes.func,
-	onEdit : PropTypes.func
-
 }
