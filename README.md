@@ -25,3 +25,8 @@ git 에 커밋 이미 커밋 된 내용 지울 경우
  - 소스트리에서 우측 상단 설정으로 눌러서 이동 후 고급에서 저장소 별 무시 목록 항목에 편집 눌러 목록 작성
    * .gitIgnore 파일 참고
    
+================
+<div>
+<img src="https://user-images.githubusercontent.com/20940993/46715316-6cf7a900-cc9a-11e8-835e-fd5cff6e22f6.png"></img>
+<div>
+================
